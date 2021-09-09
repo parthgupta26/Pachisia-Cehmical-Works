@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <script src="myscripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a href="index.php" style="text-decoration: none;" class="navbar-brand temp1">PACHISIA CHEMICAL WORKS</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right temp2">
+                        <li><a href="index.php#about">ABOUT US</a></li>
+                        
+                        <li class="dropdown">
+						  <a onclick="myFunction()" class="dropbtn">OUR PRODUCTS</a>
+						  <div id="myDropdown" class="dropdown-content">
+						  	<a href="poultry.html">VETERINARY FEED ADDITIVES</a>
+						    <a href="cattle.html">PHARMA ADDITIVES</a>
+                            <a href="food.html">FOOD GRADE CHEMICALS</a>
+                            <a href="agro.html">AGRO CHEMICALS</a>
+                            <a href="special.html">CONSTRUCTION CHEMICALS</a>
+                            <a href="cosmetic.html">COSMETIC/CLEANING CHEMICALS</a>
+						  </div>
+						</li>
+                        
+                        <li><a href="index.php#industries">CONTACT US</a></li>
+                        <li><a href="blog.php">BLOG</a></li>   
+                        <li><a href="contact.php">VISIT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+
+	
+
+
+        	<!-- <div>
+			  <h2 class="header">MY BLOG</h2>
+			</div> -->
+
+			<div class="row">
+			  <div class="leftcolumn">
+                  <?php
+                  if(mysqli_num_rows($query)>0){
+                      while ($row = mysqli_fetch_array($query)){
+                          ?>
+			    <div class="card">
+			      <h2 class="text-heading"><?=$row['title']?></h2>
+			      <h5><?=$row['time']?></h5>
+			      <a href="" target="_blank"><img class="fakeimg" src="<?=$row['image']?>" style="height:400px;"></a>
+			      <br><br>
+			      <p class="text"><?=$row['content']?><?=$row['image']?></p>
+
+			    </div>
+
+                <div class="tab">
+                  <table>
+                    <tr>
+                      <td>CHEMICAL NAME</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>CAS NO</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td>HIGHLIGHTING FEATURE</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>MAJOR APPLICATION</td>
+                      <td>D</td>
+                    </tr>
+                    <tr>
+                      <td>INDUSTRIES USED IN</td>
+                      <td>E</td>
+                    </tr>
+                    <tr>
+                      <td>COLOR</td>
+                      <td>F</td>
+                    </tr>
+                    <tr>
+                      <td>PHYSICAL NATURE</td>
+                      <td>G</td>
+                    </tr>
+                  </table>
+                </div>
+                  
+<!--
+                <div class="card">
+                  <h2 class="text-heading">Latest Chemicals Added</h2>
+                  <h5>Added On, Dec 1, 2020</h5>
+                  <a href="./images/1.jpg" target="_blank"><img class="fakeimg" src="./images/1.jpg" style="height:400px;"></a>
+                  <br><br>
+                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis rhoncus urna neque viverra justo nec. At tellus at urna condimentum. Vitae et leo duis ut diam quam nulla. Velit ut tortor pretium viverra suspendisse. Sagittis purus sit amet volutpat consequat. Sit amet nulla facilisi morbi tempus iaculis. Lectus arcu bibendum at varius vel pharetra vel. Et leo duis ut diam quam nulla porttitor massa id. Egestas erat imperdiet sed euismod nisi porta lorem. Est lorem ipsum dolor sit amet. Scelerisque in dictum non consectetur a erat nam at lectus. Faucibus a pellentesque sit amet porttitor eget dolor morbi non.</p>
+
+                  <p class="text">Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Nibh tortor id aliquet lectus proin nibh nisl. Porttitor lacus luctus accumsan tortor. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Pulvinar pellentesque habitant morbi tristique senectus et. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Bibendum ut tristique et egestas quis ipsum. Pellentesque elit eget gravida cum. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Aliquam ut porttitor leo a diam sollicitudin tempor id. Gravida neque convallis a cras semper auctor neque vitae. Pharetra convallis posuere morbi leo. Fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+
+                  <p class="text">Viverra nam libero justo laoreet sit amet cursus sit. Elit pellentesque habitant morbi tristique senectus et netus et. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla posuere. Ut sem viverra aliquet eget. Dolor magna eget est lorem ipsum. Semper risus in hendrerit gravida rutrum quisque non.</p>
+                </div>
+-->
+
+                <hr style="color: black">
+                  <?php
+                      }
+                  } else {
+                      echo "No records found";
+                  }
+                  ?>
+                  
+			  </div>
+			  <div class="rightcolumn">
+			    <div class="card">
+			      <h2 class="text-heading">Recent</h2>
+                    <?php
+                  if(mysqli_num_rows($query1)>0){
+                      while ($row1 = mysqli_fetch_array($query1)){
+                          ?>
+                    <h3><?=$row1['title']?></h3>
+                    
+                    <?php
+                      }
+                  } else {
+                      echo "No records found";
+                  }
+                  ?>
+                    
+<!--
+			      <a href="./images/2.jpg" target="_blank"><img class="fakeimg" src="./images/2.jpg" style="height:300px;"></a>
+			      <br><br>
+                    <p class="text">Jatin Maheshwari</p>
+			      <p class="text">Some text about me in culpa qui officia deserunt mollit anim..</p>
+-->
+			    </div>
+			    <div class="card">
+			      <h3>Follow Me</h3>
+			      <p>Some text..</p>
+			    </div>
+			  </div>
+			</div>
+
+
+
+
+
+        <div class="footer">
+
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>PACHISIA</span> CHEMICALS</h1>
+                    <p>
+                        The sole proprietor firm after establishing its presence in the local 
+                        market and having an extensive understanding and knowledge of the Indian Chemical Industry has made a name for 
+                        itself in North India. In Pachisia Chemical Works, we make sure what we supply is of the asked quality and nothing 
+                        less.
+                    </p>
+                    <div class="contact">
+                        <span><i class="fa fa-phone"></i> &nbsp; 9958636330 / 8860429715</span>
+                        <span><i class="fa fa-envelope"></i> &nbsp; pcworks111@gmail.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="index.php"><i style="color: #1DA1F2" class="fa fa-facebook"></i></a>
+                        <a href="index.php"><i style="color: #C13584" class="fa fa-instagram"></i></a>
+                        <a href="index.php"><i style="color: #1DA1F2" class="fa fa-twitter"></i></a>
+                        <a href="index.php"><i style="color: #FF0000" class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul>
+                        <div class="myclass11"><a href="contact.php"><li>Contact Us</li></a>
+                        <a href="index.php#products"><li>Our Products</li></a></div>
+                        <div class="myclass2"><a href="blog.php"><li>Blog</li></a>
+                        <a href="maps.html"><li>Our Location</li></a></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; Pachisia Chemicals 2020 | Privacy Policy | Terms & Conditions | <a href="authors.html">Design Credits</a>
+            </div>
+
+        </div>
+
+
+</body>
+</html>

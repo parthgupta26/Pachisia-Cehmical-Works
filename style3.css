@@ -1,0 +1,971 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body
+{
+	overflow-x: hidden;
+  height: 100%;
+}
+html{
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+.container{
+  width: 90%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5); 
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgrey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3d7ab8; 
+}
+.dropbtn {
+  background-color: #3d7ab8;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #699CB3;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.6);
+  z-index: 1;
+  font-weight: normal;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #3d7ab8;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: bolder;
+    transition: 0.4s;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #3d7ab8 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+h1
+{
+  margin-top: 0px;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.temp3{
+  font-size: 18px;
+  padding: 20px;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.bg-image {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  width: 100%;
+  height: 375px; 
+}
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 20px 20px 50px black;
+}
+h2
+{
+    font-size: 50px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+ 
+  padding: 16px;
+
+}
+h3
+{
+	color: brown;
+	font-size: 30px;
+	border-bottom: 2px solid brown;
+}
+a
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+.col{
+  margin: 10px 0px 30px 0px;
+}
+.myclass{
+  font-size: 30px;
+  font-weight: bold;
+  color: #3d7ab8;
+  border: 2px solid #3d7ab8;
+  border-radius: 7px;
+  padding: 8px;
+}
+a.myclass:hover{
+  text-decoration: none;
+  color: darkblue;
+  border: 2px solid darkblue;
+}
+
+
+.footer{
+  background: rgba(0,0,0,0.7);
+  height: 400px;
+  position: relative;
+}
+.footer .footer-content{
+  height: 350px;
+  display: flex;
+}
+.footer .footer-content .footer-section{
+  flex: 1;
+  padding: 20px 60px 30px 100px;
+}
+.footer .footer-content .about{
+  margin-top: 25px;
+  line-height: 1.7;
+}
+.footer .footer-content h1
+{
+color: white !important;
+letter-spacing: 1px !important;
+font-size: 30px;
+font-weight: normal;
+}
+.footer .footer-content h2{
+color: white !important;
+letter-spacing: 1px !important;
+font-size: 30px;
+font-weight: normal;
+}
+.footer .footer-content .about h1 span{
+  color: #05f7ff;
+}
+.footer .footer-content .about p{
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.footer .footer-content .about .contact span{
+  display: block;
+  font-size: 1.2em !important;
+  margin-bottom: 7px;
+  color: white;
+  font-family: 'Super Sans Pro';
+  letter-spacing: 1px;
+}
+.footer .footer-content .about .socials i{
+  font-size: 25px !important;
+}
+.footer .footer-content .about .socials a{
+  border: 1.5px solid gray;
+  width: 45px;
+  height: 41px;
+  padding: 5px 5px 0px 5px;
+  margin-left: 4px;
+  margin-top: 5px;
+  margin-right: 7px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.footer .footer-content .about .socials a:hover{
+  border: 1px solid white;
+  color: white;
+  transition: 0.3s;
+}
+.footer .footer-content .links ul a{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.3em !important;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+.footer .footer-content .links ul a:hover{
+  color: darkblue;
+  transition: 0.3s;
+  margin-left: 15px;
+
+}
+.footer .footer-bottom{
+  background: #343a40;
+  color: white;
+  height: 50px;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 12px; 
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px)
+{
+  .navbar .navbar-brand, .navbar li a{
+    font-size: 13px;
+  }
+  .navbar {
+    letter-spacing: 0.5px;
+  }
+  .bg-image{
+    height: auto;
+  }
+  .bg-text{
+    top: 50%;
+    width: auto;
+  }
+  h1{
+    font-size: 28px !important;
+  }
+  .temp3{
+    padding: 5px 12px 0px 12px;
+    font-size: 15px;
+  }
+  h3
+{
+  font-size: 26px;
+}
+a
+{
+  font-size: 15.5px;
+}
+.myclass{
+  font-size: 26px;
+}
+}
+
+
+
+@media screen and (min-width: 570px) and (max-width: 767px){
+   .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+ .navbar .navbar-brand, .navbar li a{
+    font-size: 16px;
+  }
+  .navbar {
+    letter-spacing: 3px;
+  }
+  .bg-image{
+    height: auto;
+  }
+  .bg-text{
+    top: 42%;
+    width: 80%;
+  }
+  .bg-text h1{
+    font-size: 24px;
+    padding: 10px 12px 0px 12px;
+  }
+  .temp3{
+    font-size: 13px;
+    padding: 10px 12px 0px 12px;
+  }
+  h3
+{
+  font-size: 24px;
+}
+a
+{
+  font-size: 16px;
+}
+.myclass{
+  font-size: 20px;
+} 
+}
+
+@media screen and (min-width: 480px) and (max-width: 569px){
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+ .navbar .navbar-brand, .navbar li a{
+    font-size: 16px;
+  }
+  .navbar {
+    letter-spacing: 3px;
+  }
+  .bg-image{
+    height: auto;
+  }
+  .bg-text{
+    top: 35%;
+    width: auto;
+  }
+  .bg-text h1{
+    font-size: 24px;
+    padding: 10px 12px 0px 12px;
+  }
+  .temp3{
+    display: none;
+  }
+  h3
+{
+  font-size: 24px;
+}
+a
+{
+  font-size: 16px;
+}
+.myclass{
+  font-size: 20px;
+} 
+}
+
+@media screen and (min-width: 293px) and (max-width: 479px){
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+ .navbar .navbar-brand, .navbar li a{
+    font-size: 13px;
+  }
+  .navbar {
+    letter-spacing: 1px;
+  }
+  .bg-image{
+    height: auto;
+  }
+  .bg-text{
+    top: 25%;
+    width: 70%;
+  }
+  h1{
+    font-size: 21px !important;
+    padding: 5px 8px 0px 8px !important;
+  }
+  .temp3{
+    display: none;
+  }
+  h3
+{
+  font-size: 24px;
+}
+a
+{
+  font-size: 16px;
+}
+.myclass{
+  font-size: 14px;
+} 
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1209px) and (max-width: 1500px){
+  .footer .footer-content .about p{
+    font-size: 14px;
+  }
+  .footer .footer-content .about .contact span{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1208px){
+   .footer .footer-content .about p{
+    font-size: 13.5px;
+  }
+  .footer .footer-content .about .contact span{
+    font-size: 13.5px;
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .footer{
+  height: 410px;
+}
+.footer .footer-content .footer-section{
+  padding: 5px 60px 0px 100px;
+}
+.footer .footer-content .about h1 span{
+  font-size: 25px;
+}
+.footer .footer-content .about h1{
+  font-size: 25px;
+}
+.footer .footer-content .about p{
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.footer .footer-content .about .contact span{
+  font-size: 14px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+.footer .footer-content .about .socials i{
+  font-size: 18px;
+}
+.footer .footer-content .about .socials a{
+  width: 40px;
+  height: 40px;
+  padding: 5px 5px 0px 5px;
+  margin-left: 4px;
+  margin-top: 5px;
+  margin-right: 7px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .footer{
+  height: 420px;
+}
+.footer .footer-content .footer-section{
+  padding: 5px 0px 0px 50px;
+}
+.footer .footer-content .about h1 span{
+  font-size: 25px;
+}
+.footer .footer-content .about h1{
+  font-size: 25px;
+}
+.footer .footer-content .about p{
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.footer .footer-content .about .contact span{
+  font-size: 14px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+.footer .footer-content .about .socials i{
+  font-size: 18px;
+}
+.footer .footer-content .about .socials a{
+  width: 40px;
+  height: 40px;
+  padding: 5px 5px 0px 5px;
+  margin-left: 4px;
+  margin-top: 5px;
+  margin-right: 7px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+}
+
+@media screen and (min-width: 670px) and (max-width: 767px){
+  .footer{
+  height: 400px;
+}
+.footer .footer-content .footer-section{
+  padding: 5px 0px 0px 50px;
+}
+.footer .footer-content .about h1 span{
+  font-size: 25px;
+}
+.footer .footer-content .about h1{
+  font-size: 25px;
+}
+.footer .footer-content .about p{
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+}
+.footer .footer-content .about .contact span{
+  font-size: 13.5px;
+  margin-bottom: 3px;
+  letter-spacing: 0.5px;
+}
+.footer .footer-content .about .socials i{
+  display: none;
+}
+.footer .footer-content .about .socials a{
+ display: none;
+}
+}
+
+@media screen and (min-width: 532px) and (max-width: 669px){
+  .footer{
+  height: 420px;
+}
+.footer .footer-content .footer-section{
+  padding: 5px 0px 0px 50px;
+}
+.footer .footer-content .about h1 span{
+  font-size: 22px;
+}
+.footer .footer-content .about h1{
+  font-size: 22px;
+}
+.footer .footer-content .about p{
+  font-size: 13px;
+  letter-spacing: 0px;
+}
+.footer .footer-content .about .contact span{
+  font-size: 13px;
+  margin-bottom: 4px;
+  letter-spacing: 0px;
+}
+.footer .footer-content .about .socials i{
+  font-size: 16px;
+  display: none;
+  border: none;
+}
+.footer .footer-content .about .socials a{
+  border: none;
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 5px 5px 0px 5px;
+  margin-left: 4px;
+  margin-top: 0px;
+  margin-right: 7px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.footer .footer-bottom{
+  height: 50px;
+  padding-top: 12px; 
+  font-size: 12.5px;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 531px){
+  .footer{
+  height: 180px;
+}
+.footer .footer-content{
+  display: block;
+  height: 130px;
+}
+.footer .footer-content .footer-section h2{
+  font-size: 20px;
+  padding-top: 11px;
+  text-align: center;
+  color: #05f7ff !important;
+  margin-bottom: 0px;
+}
+.footer .footer-content .links ul a li{
+  font-size: 15px; 
+  letter-spacing: 1px;
+}
+.footer .footer-content .links ul.a{
+  list-style-type: square;
+  list-style-position: inside;
+}
+.myclass11{
+  text-align: left;
+  float: left;
+  width: 50%;
+  padding-left: 5%;
+}
+.myclass2{
+  float: left;
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 0px;
+}
+.footer .footer-content .footer-section{
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+.footer .footer-content .about h1 span{
+  display: none;
+}
+.footer .footer-content .about h1{
+  display: none;
+}
+.footer .footer-content .about p{
+ display: none;
+}
+.footer .footer-content .about .contact span{
+  display: none;
+}
+.footer .footer-content .about .socials i{
+  display: none;
+}
+.footer .footer-content .about .socials a{
+  display: none;
+}
+.footer .footer-bottom{
+  height: 50px;
+  padding-top: 12px; 
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+}
+
+@media screen and (max-width: 479px){
+  .footer{
+  height: 180px;
+}
+.footer .footer-content{
+  display: block;
+  height: 130px;
+}
+.footer .footer-content .footer-section h2{
+  font-size: 20px;
+  padding-top: 11px;
+  text-align: center;
+  color: #05f7ff !important;
+  margin-bottom: 0px;
+}
+.footer .footer-content .links ul a li{
+  font-size: 13.5px; 
+  letter-spacing: 1px;
+}
+.footer .footer-content .links ul.a{
+  list-style-type: square;
+  list-style-position: inside;
+}
+.myclass11{
+  text-align: left;
+  float: left;
+  width: 50%;
+  padding-left: 0px;
+}
+.myclass2{
+  float: left;
+  width: 50%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.footer .footer-content .footer-section{
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+.footer .footer-content .about h1 span{
+  display: none;
+}
+.footer .footer-content .about h1{
+  display: none;
+}
+.footer .footer-content .about p{
+ display: none;
+}
+.footer .footer-content .about .contact span{
+  display: none;
+}
+.footer .footer-content .about .socials i{
+  display: none;
+}
+.footer .footer-content .about .socials a{
+  display: none;
+}
+.footer .footer-bottom{
+  height: 50px;
+  padding-top: 12px; 
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+}
+
+
+/*blog css*/
+
+.header {
+  padding: 15px 15px 0px 15px;
+  font-size: 40px;
+  margin-bottom: -30px;
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+.fakeimg{
+  border: 4px solid #3d7ab8;
+  border-radius: 12px;
+  padding: 7px;
+  width: 100%;
+}
+
+.fakeimg:hover {
+  box-shadow: 0 0 2px 1px #3d7ab8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 30px;
+   margin-top: 0px;
+}
+.text{
+  text-align: justify;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.text-heading{
+  font-size: 45px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  .header{
+    font-size: 30px !important;
+    margin-bottom: 0px;
+  }
+  h5{
+    text-align: center;
+  }
+  .text{
+    font-size: 15px;
+  }
+  .text-heading{
+    font-size: 25px;
+    text-align: center;
+  }
+  .card{
+    margin-top: 0px;
+  }
+}
+
+
+
+
+
+/*FOR TABLE*/
+
+.tab {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media screen and (min-width: 480px)  and (max-width: 550px){
+   .tab {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+  td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+  font-size: 13px;
+}
+}
+@media screen and (max-width: 479px){
+  .tab {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+  font-size: 12px;
+}
+}
+
+
+
+
+/* For New BLOG */
+
+
+/* Float four columns side by side */
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 35px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card1 {
+  padding: 0.5px 5px 5px 5px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: 3px solid black;
+  background-color: lightyellow;
+}
+
+.card1:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+
+.blog {
+  border: none;
+  color: black;
+  font-size: 26px;
+  font-family: Calibri;
+}
+
+a.bloga {
+  text-decoration: none;
+}
